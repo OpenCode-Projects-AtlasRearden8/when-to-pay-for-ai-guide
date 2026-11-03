@@ -1,0 +1,181 @@
+/* When to Pay for AI — warm, friendly, easy-to-read styles */
+
+:root {
+  --bg: #faf6f0;
+  --surface: #fffdf9;
+  --ink: #3b322c;
+  --ink-soft: #6f6258;
+  --accent: #b0713a;
+  --accent-dark: #8a5327;
+  --accent-soft: #f3e3d3;
+  --line: #e8ddd0;
+  --good: #4a7c59;
+  --code-bg: #f3ece2;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 17px; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+header.site {
+  border-bottom: 3px double var(--line);
+  padding: 1.25rem 1.25rem 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+header.site .brand {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+header.site h1 {
+  margin: 0.25rem 0 0.25rem;
+  font-size: 1.6rem;
+  color: var(--accent-dark);
+}
+
+nav.chapter {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 0.85rem;
+}
+
+nav.chapter ol { margin: 0.5rem 0 0; padding-left: 1.25rem; }
+nav.chapter li { margin: 0.15rem 0; }
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+article h1 { font-size: 1.85rem; color: var(--accent-dark); }
+article h2 {
+  font-size: 1.3rem;
+  margin-top: 2.2rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.25rem;
+}
+article h3 {
+  font-size: 1.05rem;
+  margin-top: 1.6rem;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+p, li { max-width: 42rem; }
+
+a {
+  color: var(--accent-dark);
+  text-decoration-color: rgba(176, 113, 58, 0.4);
+  text-underline-offset: 2px;
+}
+a:hover { color: var(--accent); }
+
+blockquote {
+  margin: 1.25rem 0;
+  padding: 0.75rem 1.1rem;
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+}
+blockquote p { margin: 0; }
+
+code {
+  font-family: "SF Mono", Consolas, Menlo, monospace;
+  font-size: 0.85em;
+  background: var(--code-bg);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  overflow-x: auto;
+  line-height: 1.45;
+}
+pre code {
+  background: none;
+  padding: 0;
+  font-size: 0.85rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.25rem 0;
+  font-size: 0.92rem;
+  background: var(--surface);
+}
+th, td {
+  border: 1px solid var(--line);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: var(--accent-soft);
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 0.85rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 2.5rem 0;
+}
+
+ul.checkbox + *, .task-list { list-style: none; }
+/* GFM task lists (rendered checkboxes) */
+li.task-list-item {
+  list-style: none;
+  margin-left: -1.2em;
+}
+li.task-list-item input { margin-right: 0.4em; }
+
+footer.site {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 3px double var(--line);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+footer.site .pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+footer.site .pager a {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 0.82rem;
+}
+
+.colophon {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 540px) {
+  html { font-size: 16px; }
+  .wrap { padding: 1rem 1rem 2.5rem; }
+}
